@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./proiect.css" />
+    <title>todos</title>
+</head>
+
+<body>
+    <h1>todos</h1>
+    <div class="container">
+
+        <div class="box">
+            <img id="arrow" src="arrow_light.png" class="icon">
+            <input id="input_text" type="text" placeholder="What needs to be done?">
+        </div>
+
+        <!-- <hr class="solid no_margin">
+        <div class="box">
+            <img src="cerc_gol.png" class="icon_mai_mare">
+            <p class="todo_text">ceva</p>
+            <img src="x.png" class="icon_mai_mic">
+        </div>
+
+        <hr class="solid no_margin">
+        <div class="box">
+            <img src="cerc_cu_bifa.png" class="icon_mai_mare">
+            <p class="todo_text_checked">altceva</p>
+            <img src="x.png" class="icon_mai_mic">
+        </div> -->
+
+        <div id="list">
+        </div>
+
+        <hr class="solid no_margin">
+        <div id="box2" class="box2">
+            <div>
+                <p id="scor" class="inline_block no_margin footer_text padding">0</p>
+                <p class="inline_block no_margin footer_text padding">item(s) left</p>
+            </div>
+            <div>
+                <p id="all" class="da inline_block no_margin categories footer_text checked">All</p>
+                <p id="active" class="da inline_block no_margin categories footer_text">Active</p>
+                <p id="completed" class="da inline_block no_margin categories footer_text">Completed</p>
+            </div>
+            <p id="clear" class="no_margin categories footer_text underline">Clear completed</p>
+        </div>
+
+    </div>
+
+    <div id="div_decor1" class="div_decor1"></div>
+    <div id="div_decor2" class="div_decor2"></div>
+
+    <p class="bottom_text" style="margin-top: 5vh;">Double-click to edit a todo</p>
+    <p class="bottom_text">Created by <a href="https://twitter.com/oscargodson">Oscar Godson</a></p>
+    <p class="bottom_text">Refactored by <a href="https://github.com/cburgmer">Christoph Burgmer</a></p>
+    <p class="bottom_text">Part of <a href="https://todomvc.com/">TodoMVC</a></p>
+    <script src="proiect.js"></script>
+</body>
+
+</html>
