@@ -16,8 +16,8 @@ let numb = 0
 
 function heavy_arrow() {
     if (children.length === completes.length && children.length > 0)
-        arrow.src = "arrow.png"
-    else arrow.src = "arrow_light.png"
+        arrow.src = "Resources/arrow.png"
+    else arrow.src = "Resources/arrow_light.png"
 }
 
 function hide_arrow() {
@@ -143,7 +143,7 @@ function afisare() {
 
             newElem.classList.add("box")
 
-            check.src = "cerc_gol.png"
+            check.src = "Resources/cerc_gol.png"
             check.classList.add("icon_mai_mare")
             check.addEventListener("click", event => {
                 press_check(current, check, text)
@@ -162,7 +162,7 @@ function afisare() {
                 check.style.visibility = 'visible'
             })
 
-            cross.src = "x.png"
+            cross.src = "Resources/x.png"
             cross.classList.add("icon_mai_mic")
 
             cross.addEventListener("click", event => {
@@ -192,7 +192,7 @@ function afisare() {
 
             newElem.classList.add("box")
 
-            check.src = "cerc_cu_bifa.png"
+            check.src = "Resources/cerc_cu_bifa.png"
             check.classList.add("icon_mai_mare")
             check.addEventListener("click", event => {
                 press_check(current, check, text)
@@ -211,7 +211,7 @@ function afisare() {
                 check.style.visibility = 'visible'
             })
 
-            cross.src = "x.png"
+            cross.src = "Resources/x.png"
             cross.classList.add("icon_mai_mic")
             cross.addEventListener("click", event => {
                 press_x(aidi)
@@ -242,10 +242,10 @@ function afisare() {
             newElem.classList.add("box")
 
             if (special === false) {
-                check.src = "cerc_cu_bifa.png"
+                check.src = "Resources/cerc_cu_bifa.png"
                 text.classList.add("todo_text_checked")
             } else {
-                check.src = "cerc_gol.png"
+                check.src = "Resources/cerc_gol.png"
                 text.classList.add("todo_text")
             }
             check.classList.add("icon_mai_mare")
@@ -266,7 +266,7 @@ function afisare() {
                 check.style.visibility = 'visible'
             })
 
-            cross.src = "x.png"
+            cross.src = "Resources/x.png"
             cross.classList.add("icon_mai_mic")
             cross.addEventListener("click", event => {
                 press_x(aidi)
@@ -300,23 +300,15 @@ function press_check(current, check, text) {
 
     if (current.active === true) {
         current.active = false
-        check.src = "cerc_cu_bifa.png"
+        check.src = "Resources/cerc_cu_bifa.png"
         text.classList.remove("todo_text")
         text.classList.add("todo_text_checked")
     } else {
         current.active = true
-        check.src = "cerc_gol.png"
+        check.src = "Resources/cerc_gol.png"
         text.classList.remove("todo_text_checked")
         text.classList.add("todo_text")
     }
     update_lists()
     afisare();
 }
-
-// for(var i = 0; i < children.length; i++) {
-//     var obj = children[i];
-
-//     console.log(obj.id);
-// }
-
-// children.forEach(function(obj) { console.log(obj.id); });
